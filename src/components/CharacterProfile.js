@@ -19,14 +19,17 @@ const CharacterProfile = ({character}) => {
   return (
     <div>
       <h1>{character.name}</h1>
-      <p>Planets</p>
-      <ul>{planets}</ul>
-      <p>Films</p>
-      <ul>{films}</ul>
-      <p>Starships</p>
-      <ul>{starships}</ul>
-      <p>Vehicles</p>
-      <ul>{vehicles}</ul>
+      <h4 className="ui block top attached header">Planets</h4>
+      <ul className="ui attached segment">{planets}</ul>
+      <div className="ui section divider"></div>
+      <h4 className="ui block top attached header">Films</h4>
+      <ul className="ui attached segment">{films}</ul>
+      <div className="ui section divider"></div>
+      <h4 className="ui block top attached header">Starships</h4>
+      <ul className="ui attached segment">{starships}</ul>
+      <div className="ui section divider"></div>
+      <h4 className="ui block top attached header">Vehicles</h4>
+      <ul className="ui attached segment">{vehicles}</ul>
     </div>
   )
 }
